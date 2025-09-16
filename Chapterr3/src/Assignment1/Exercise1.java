@@ -18,7 +18,9 @@ public class Exercise1 {
 		time = input.nextInt();
 		input.close();
 		
-		int height = 100 - (int)4.9
+		height = 100 - (int)4.9 * (time * time);
+		
+		System.out.print("The height of the object is: "+ height);
 		
 		
 		
