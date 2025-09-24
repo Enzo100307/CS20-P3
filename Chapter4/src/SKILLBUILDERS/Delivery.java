@@ -1,11 +1,10 @@
-package Skillbuilders;
+package SKILLBUILDERS;
 
-public class GradeAvg1 {
+public class Delivery {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-	        
 
 	}
+
 }
