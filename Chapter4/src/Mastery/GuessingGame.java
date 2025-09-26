@@ -18,11 +18,11 @@ public class GuessingGame {
 		System.out.println("Player's Number:" + player_num);
 		
 		if (secret_num == player_num) {
-			System.out.println("You won");
+			System.out.println("You won!");
 		} else if (secret_num >= player_num) {
 			System.out.println("Better luck next time.");
 		} else if (secret_num <= player_num) {
-			System.out.println("Better luck next time");
+			System.out.println("Better luck next time.");
 		} else
 			System.out.println("Invalid Input!");
 		
