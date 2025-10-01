@@ -22,7 +22,7 @@ public class Delivery {
             System.out.println("Accept");
         }
 
-        input.close();
+        input.close(); 
 
 	}
 
