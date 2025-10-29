@@ -1,0 +1,35 @@
+package Mastery;
+import java.util.Scanner;
+import java.util.Random;
+
+public class GuessingGame2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		Random random = new Random();
+		
+		System.out.println("Enter a number between 1 and 20: ");
+		int player_num = input.nextInt();
+		int secret_num = random.nextInt(20) + 1;
+		
+		while (secret_num < 0) {
+			secret_num += 1;
+		}
+		if (secret_num == player_num) {
+			System.out.println("You won!");
+		} else if (secret_num <= player_num) {
+			System.out.println("Try again.");
+		} else if (secret_num >= player_num) {
+			System.out.println("Try again.");
+		} else
+			System.out.println("Invalid Input");
+		
+		
+		input.close();
+			
+
+	}
+
+}
