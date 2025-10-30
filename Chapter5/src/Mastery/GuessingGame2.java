@@ -7,27 +7,36 @@ public class GuessingGame2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner input = new Scanner(System.in);
+		int player_num;
+		int secret_num;
+		int tries = 0;
+		
+		
 		Random random = new Random();
+		Scanner input = new Scanner(System.in);
 		
+		secret_num = random.nextInt(20) + 1;
+		
+		do
+		{
 		System.out.println("Enter a number between 1 and 20: ");
-		int player_num = input.nextInt();
-		int secret_num = random.nextInt(20) + 1;
+		player_num = input.nextInt();
+		tries++;
 		
-		while (secret_num < 0) {
-			secret_num += 1;
-		}
+		
+		
+		
 		if (secret_num == player_num) {
-			System.out.println("You won!");
-		} else if (secret_num <= player_num) {
-			System.out.println("Try again.");
-		} else if (secret_num >= player_num) {
-			System.out.println("Try again.");
-		} else
-			System.out.println("Invalid Input");
+            System.out.println("You won!");
+        } else if (secret_num > player_num) {
+            System.out.println("Try again.");
+        } else { // This else handles the case where secret_num < player_num
+            System.out.println("Try again.");
+        }
+    } while (secret_num != player_num);
+
+    input.close();
 		
-		
-		input.close();
 			
 
 	}
