@@ -30,7 +30,7 @@ public class GuessingGame2 {
             System.out.println("You won!");
         } else if (secret_num > player_num) {
             System.out.println("Try again.");
-        } else { // This else handles the case where secret_num < player_num
+        } else { 
             System.out.println("Try again.");
         }
     } while (secret_num != player_num);
