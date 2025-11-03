@@ -24,16 +24,15 @@ public class GuessingGame2 {
 		tries++;
 		
 		
-		
-		
 		if (secret_num == player_num) {
             System.out.println("You won!");
-        } else if (secret_num > player_num) {
+        } else if (secret_num >= player_num) {
             System.out.println("Try again.");
         } else { 
             System.out.println("Try again.");
         }
-    } while (secret_num != player_num);
+     }
+		while (secret_num != player_num);
 
     input.close();
 		
