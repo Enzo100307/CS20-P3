@@ -11,7 +11,7 @@ public class Evens {
 		
 		System.out.println("Even numbers between 1-20");
 		
-		while( newValue < maxValue) {
+		while(newValue < maxValue) {
 			
 			newValue += 2;
 			
