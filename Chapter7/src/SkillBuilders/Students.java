@@ -9,9 +9,9 @@ public class Students
 	
 	public Students()//Constructor method
 	{
-		firstName = "";
-		lastName = "";
-		address = "####";
+		firstName = "Unknown";
+		lastName = "Unknown";
+		address = "Unknown";
 		stuID = 0000000;
 		
     }
@@ -66,6 +66,26 @@ public class Students
 		stuID = ID;
 	}
 		
-	}
+
+    
+    public String toString()
+    {
+       System.out.println("First name: " + firstName
+    		              + "\nLast name: " + lastName
+    		              + "\nAddress: " + address
+    		              + "\nStudent ID: "+ stuID
+    		              );
+       return address;
+       
+       
+    }
+    
+
+
+
+
+
+}
+
 
 

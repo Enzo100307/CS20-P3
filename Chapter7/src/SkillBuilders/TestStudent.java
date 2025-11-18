@@ -8,11 +8,22 @@ public class TestStudent {
 		Students stA = new Students();
 		
 		System.out.println(stA.getFirstName());
-		stA.setFirstName("AAA");
-		System.out.println(stA.getFirstName());
-		stA.setstudentID(8987988);
+		System.out.println(stA.getLastName());
 		System.out.println(stA.getstudentID());
+		System.out.println(stA.getAddress());
 		
+		System.out.println("------------------");
+		
+		Students stB = new Students("Carl", "Johnson", "67 Grove Street", 123456789);
+		
+		/*System.out.println(stB.getFirstName());
+		System.out.println(stB.getLastName());
+		System.out.println(stB.getstudentID());
+		System.out.println(stB.getAddress());
+		*/
+		
+		stB.setFirstName("Carl");
+		System.out.println(stB);
 
 	}
 
