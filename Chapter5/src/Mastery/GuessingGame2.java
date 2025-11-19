@@ -34,7 +34,7 @@ public class GuessingGame2 {
      }
 		while (secret_num != player_num);
 
-    input.close();
+        input.close();
 		
 			
 

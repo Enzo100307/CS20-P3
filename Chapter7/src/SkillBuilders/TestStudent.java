@@ -22,9 +22,9 @@ public class TestStudent {
 		System.out.println(stB.getAddress());
 		*/
 		
-		stB.setFirstName("Carl");
 		System.out.println(stB);
 
+	
 	}
 
 }

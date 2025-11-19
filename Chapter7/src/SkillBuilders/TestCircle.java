@@ -1,0 +1,15 @@
+package SkillBuilders;
+
+public class TestCircle {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		Circle spot = new Circle();
+		
+		System.out.println(spot.getRadius());
+
+	}
+
+}

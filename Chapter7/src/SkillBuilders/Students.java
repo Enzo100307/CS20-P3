@@ -25,7 +25,8 @@ public class Students
 		
 	
     }
-	//Accessor Methods
+	
+	//Accessor methods
 	public String getFirstName()
 	{
 		return firstName;
@@ -65,27 +66,17 @@ public class Students
 	{
 		stuID = ID;
 	}
-		
-
-    
-    public String toString()
+	
+	public String toString()
     {
-       System.out.println("First name: " + firstName
+       return("First name: " + firstName
     		              + "\nLast name: " + lastName
     		              + "\nAddress: " + address
     		              + "\nStudent ID: "+ stuID
-    		              );
-       return address;
-       
-       
+    		          );
     }
     
-
-
-
-
-
-}
+}//Closes the Class
 
 
 
