@@ -5,7 +5,7 @@ class Circle
 	private static final double PI = 3.14;
 	private double radius;
 	
-	public Circle()
+	public Circle()//default 
 	{
 		radius = 1;
 	}
