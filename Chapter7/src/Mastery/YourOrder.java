@@ -19,34 +19,34 @@ public class YourOrder
 		
 		
 		//Price
-		int hamburgerPrice = (int)(1.85);
-		int saladPrice = (int)(2.00);
-		int frenchfriesPrice = (int)(1.30);
-		int sodaPrice = (int)(0.95);
+		float hamburgerPrice = 1.85f;
+		float saladPrice = 2.00f;
+		float frenchfriesPrice = 1.30f;
+		float sodaPrice = 0.95f;
 		
 		//Fat
-		int hamburgerFat = (int)(9.00);
-	    int saladFat = (int)(1.00);
-	    int freshfriesFat = (int)(11.00);
-	    int sodaFat = (int)(0.00);
+		float hamburgerFat = 9.00f;
+	    float saladFat = 1.00f;
+	    float freshfriesFat = 11.0f;
+	    float sodaFat = 0.00f;
 	    
 	    //Carbohydrates
-	    int hamburgerCarbs = (int)(33.00);
-	    int saladCarbs = (int)(11.00);
-	    int frenchfriesCarbs = (int)(36.00);
-	    int sodaCarbs = (int)(38.00);
+	    float hamburgerCarbs = 33.0f;
+	    float saladCarbs = 11.0f;
+	    float frenchfriesCarbs = 36.0f;
+	    float sodaCarbs = 38.0f;
 	    
 	    //Fiber
-	    int hamburgerFiber = (int)(1.00);
-	    int saladFiber = (int)(5.00);
-	    int frenchfriesFiber = (int)(4.00);
-	    int sodaFiber = (int)(0.00);
+	    float hamburgerFiber = 1.00f;
+	    float saladFiber = 5.00f;
+	    float frenchfriesFiber = 4.00f;
+	    float sodaFiber = 0.00f;
 	    
 	    //HamburgerInput
 	    System.out.println("Enter number of hamburger: ");
 	    userinput = input.nextInt();
 	    
-	    int total1 = hamburgerPrice * userinput;
+	    float total1 = hamburgerPrice * userinput;
 	    
 	    System.out.println("Each hamburgers has " + hamburgerFat + "g of fat, " + hamburgerCarbs + "g of carbs, and " + hamburgerFiber + "g of fiber.");
 	    
@@ -54,7 +54,7 @@ public class YourOrder
 	    System.out.println("Enter a number of salads: ");
 	    userinput = input.nextInt();
 	    
-	    int total2 = saladPrice *  userinput;
+	    float total2 = saladPrice *  userinput;
 	    
 	    System.out.println("Each salad has " + saladFat + "g of fat, " + saladCarbs + "g of carbs, and " + saladFiber + "g of fiber.");
 	    
@@ -62,7 +62,7 @@ public class YourOrder
 	    System.out.println("Enter a number of fries: ");
 	    userinput = input.nextInt();
 	    
-	    int total3 =  frenchfriesPrice * userinput;
+	    float total3 =  frenchfriesPrice * userinput;
 	    
 	    System.out.println("French fries have " + freshfriesFat + "g of fat, " + frenchfriesCarbs + "g of carbs, and " + frenchfriesFiber + "g of fiber.");
 	    
@@ -71,15 +71,15 @@ public class YourOrder
 	    System.out.println("Enter a number of sodas: ");
 	    userinput = input.nextInt();
 	    
-	    int total4 = sodaPrice * userinput;
+	    float total4 = sodaPrice * userinput;
 	    
 	    System.out.println("Each soda has " + sodaFat + "g of fat " + sodaCarbs + "g of carbs, and " + sodaFiber + "g of fiber.");
 	    
-	    int total =  (total1 + total2 + total3 + total4);
+	    float total =  (total1 + total2 + total3 + total4);
 	    
 	    System.out.println("Your order comes to: $" + total);
 	    
-	    
+	    input.close();
 
 	    
 	    

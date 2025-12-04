@@ -3,21 +3,21 @@ package Mastery;
 public class LunchOrder 
 {
 	private String Item;
-	private int Price;
-	private int Fat;
-	private int Carbohydrates;
-	private int Fiber;
+	private float Price;
+	private float Fat;
+	private float Carbohydrates;
+	private float Fiber;
 	
 	public LunchOrder()
 	{
 		Item = " ";
-		Price = 000;
-		Fat = 00;
-		Carbohydrates = 00;
-		Fiber = 00;
+		Price = 0;
+		Fat = 0;
+		Carbohydrates = 0;
+		Fiber = 0;
 	}
 	
-	public LunchOrder(String I, int P, int Fa, int C, int Fi)
+	public LunchOrder(String I, float P, float Fa, float C, float Fi)
 	{
 		Item = I;
 		Price = P;
@@ -31,22 +31,22 @@ public class LunchOrder
 		return Item;
 	}
 	
-	public int getPrice()
+	public float getPrice()
 	{
 		return Price;
 	}
 	
-	public int getFat()
+	public float getFat()
 	{
 		return Fat;
 	}
 	
-	public int getCarbs()
+	public float getCarbs()
 	{
 		return Carbohydrates;
 	}
 	
-	public int getFiber()
+	public float getFiber()
 	{
 		return Fiber;
 	}
@@ -56,22 +56,22 @@ public class LunchOrder
 		Item = I;
 	}
 	
-	public void setPrice(int P)
+	public void setPrice(float P)
 	{
 		Price = P;
 	}
 	
-	public void setFat(int Fa)
+	public void setFat(float Fa)
 	{
 		Fat = Fa;
 	}
 	
-	public void setCarbs(int C)
+	public void setCarbs(float C)
 	{
 		Carbohydrates = C;
 	}
 	
-	public void setFiber(int Fi)
+	public void setFiber(float Fi)
 	{
 		Fiber = Fi;
 	}
