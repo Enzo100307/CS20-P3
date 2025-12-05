@@ -8,7 +8,7 @@ public class YourOrder
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
-		LunchOrder LunchOrder = new LunchOrder();
+        LunchOrder LunchOrder = new LunchOrder();
 		
 		LunchOrder hamburger = new LunchOrder();
 		LunchOrder salad = new LunchOrder();
