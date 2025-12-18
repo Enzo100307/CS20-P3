@@ -1,4 +1,5 @@
 import com.phidget22.*;
+
 public class L1EX2 
 {
 	public static void main(String[] args) throws Exception
@@ -15,10 +16,20 @@ public class L1EX2
 		
 		//Use Phidgets
 		
-		for(i = 0; i <= 3; i++)
+		for(int i = 0; i <= 3; i++)
 		{
+			redLED.setState(true);
+			Thread.sleep(1000);
 			
+			redLED.setState(false);
+			Thread.sleep(1000);
 		}
+		
+		redLED.close();
+		
+		
+		
+		
 			
 		
 	}
