@@ -8,7 +8,7 @@ public class L1EX2
 		DigitalOutput redLED = new DigitalOutput();
 		
 		//Address
-		redLED.setHubPort(0);
+		redLED.setHubPort(1);
 		redLED.setIsHubPortDevice(true);
 		
 		//Open
@@ -16,7 +16,7 @@ public class L1EX2
 		
 		//Use Phidgets
 		
-		for(int i = 0; i <= 3; i++)
+		for(int i = 0; i < 3; i++)
 		{
 			redLED.setState(true);
 			Thread.sleep(1000);
